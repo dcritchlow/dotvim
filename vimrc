@@ -101,3 +101,16 @@ nmap <C-Down> ddp
 " Bubble multiple lines
 vmap <C-Up> xkP`[V`]
 vmap <C-Down> xp`[V`]
+
+let mapleader=','
+if exists(":Tabularize")
+  nmap <Leader>a= :Tabularize /=<CR>
+  vmap <Leader>a= :Tabularize /=<CR>
+  nmap <Leader>a: :Tabularize /:\zs<CR>
+  vmap <Leader>a: :Tabularize /:\zs<CR>
+endif
+
+" Modify for ctrl-v ctrl-c copy/paste
+nmap <C-V> "+gP
+imap <C-V> <ESC><C-V>i
+vmap <C-C> "+y
