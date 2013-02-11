@@ -1,3 +1,6 @@
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 " Make Vim more liberal about hidden buffers
 set hidden
 
