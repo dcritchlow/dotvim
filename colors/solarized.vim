@@ -1,0 +1,1 @@
+/home/darin/.vim/bundle/solarized/colors/solarized.vim

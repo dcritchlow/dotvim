@@ -1,6 +1,10 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+syntax enable
+set background=dark
+colorscheme solarized
+
 " Make Vim more liberal about hidden buffers
 set hidden
 
@@ -9,9 +13,6 @@ nmap <leader>l :set list!<CR>
 
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
-
-"color"
-:color blackboard
 
 " Set tabstop, softtabstop and shiftwidth to the same value
 command! -nargs=* Stab call Stab()
